@@ -1,26 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&family=Barlow+Condensed:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
+@theme {
+  /* Brand Colors */
+  --color-brand-red: #BF0A30;
+  --color-brand-red-dark: #8C0720;
+  --color-brand-red-light: #E8194A;
+  --color-brand-blue: #0A1F6B;
+  --color-brand-blue-mid: #1A3A9B;
+  --color-brand-blue-light: #3B5FCC;
+  --color-brand-off-white: #F5F5F0;
+  --color-brand-gray-light: #E8E8E0;
+  --color-brand-gray-mid: #9A9A90;
+  --color-brand-gray-dark: #2A2A28;
+  --color-brand-earth: #C4713A;
+  --color-brand-stone: #7A7A72;
+
+  /* Fonts */
+  --font-display: 'Oswald', sans-serif;
+  --font-body: 'Source Sans 3', sans-serif;
+  --font-accent: 'Barlow Condensed', sans-serif;
+
+  /* Border Radius */
+  --radius-btn: 4px;
+}
+
+/* Google Fonts loaded via next/font in layout.tsx */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-red:        #BF0A30;
+  --color-red-dark:   #8C0720;
+  --color-red-light:  #E8194A;
+  --color-blue:       #0A1F6B;
+  --color-blue-mid:   #1A3A9B;
+  --color-blue-light: #3B5FCC;
+  --color-white:      #FFFFFF;
+  --color-off-white:  #F5F5F0;
+  --color-gray-light: #E8E8E0;
+  --color-gray-mid:   #9A9A90;
+  --color-gray-dark:  #2A2A28;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  color: var(--color-gray-dark);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+}
+
+/* Utility classes for brand fonts */
+.font-display {
+  font-family: var(--font-display) !important;
+}
+.font-body {
+  font-family: var(--font-body) !important;
+}
+.font-accent {
+  font-family: var(--font-accent) !important;
+}
+
+/* Button base */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  text-decoration: none;
+  border: none;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--color-red);
+  color: #fff;
+  padding: 14px 32px;
+}
+.btn-primary:hover {
+  background: var(--color-red-dark);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+  padding: 12px 28px;
+}
+.btn-secondary:hover {
+  background: var(--color-blue);
+  color: #fff;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-red);
+  padding: 12px 20px;
+}
+.btn-ghost:hover {
+  text-decoration: underline;
+}
+
+.btn-sm {
+  padding: 8px 20px;
+  font-size: 0.875rem;
+}
+.btn-lg {
+  padding: 18px 40px;
+  font-size: 1.125rem;
+}
+
+/* Section headings */
+.section-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-blue);
+  line-height: 1.15;
+}
+
+/* Fee badge */
+.fee-badge {
+  font-family: var(--font-accent);
+  font-size: 0.85rem;
+  color: var(--color-gray-mid);
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Card with red left border */
+.product-card {
+  border-left: 3px solid var(--color-red);
+  background: #fff;
+  border-radius: 0 4px 4px 0;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Clip-path section divider */
+.section-divider {
+  clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+  background: var(--color-blue);
+  height: 120px;
+}
+
+/* Form styles */
+.form-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.375rem;
+  font-family: var(--font-accent);
+  color: var(--color-gray-mid);
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid var(--color-gray-light);
+  border-radius: 4px;
+  padding: 0.625rem 0.75rem;
+  font-size: 0.9375rem;
+  font-family: var(--font-body);
+  color: var(--color-gray-dark);
+  background: #fff;
+  transition: border-color 0.15s;
+  appearance: auto;
+}
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-blue);
+}
+
+.form-error {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  color: var(--color-red);
+  font-family: var(--font-body);
+}
+
+/* Print styles for calculator */
+@media print {
+  header, footer, nav, .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
 }
