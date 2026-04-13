@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 import { BUSINESS, PAYMENT } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Contact — WACT Logistics LLC | Sherman, TX",
+  title: "Contact — WACT Logistics LLC | Trenton, TX",
   description:
     "Get in touch with WACT Logistics LLC. Request a quote, ask a question, or schedule a pickup. Call 972-984-8858 or use our contact form.",
 };

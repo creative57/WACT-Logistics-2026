@@ -147,7 +147,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} {BUSINESS.name}. All rights reserved.
           </p>
           <p>
-            Sherman, TX{" "}
+            Trenton, TX{" "}
             <span role="img" aria-label="American Flag">
               🇺🇸
             </span>

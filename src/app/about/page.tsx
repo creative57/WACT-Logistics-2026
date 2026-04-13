@@ -4,9 +4,9 @@ import { MapPin, Users, Truck, Heart } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "About WACT Logistics LLC — Sherman, Texas",
+  title: "About WACT Logistics LLC — Trenton, Texas",
   description:
-    "WACT Logistics LLC is a locally owned sand, gravel, and aggregate company based in Sherman, TX. Serving Grayson County and North Texas.",
+    "WACT Logistics LLC is a locally owned sand, gravel, and aggregate company based in Trenton, TX. Serving Grayson County and North Texas.",
 };
 
 export default function AboutPage() {
@@ -22,7 +22,7 @@ export default function AboutPage() {
             className="text-sm font-semibold uppercase tracking-widest mb-3"
             style={{ fontFamily: "var(--font-accent)", color: "var(--color-red)" }}
           >
-            Sherman, Texas
+            Trenton, Texas
           </p>
           <h1
             className="text-white font-bold"
@@ -44,14 +44,14 @@ export default function AboutPage() {
             className="text-2xl font-bold mb-6"
             style={{ fontFamily: "var(--font-display)", color: "var(--color-blue)", letterSpacing: "0.04em" }}
           >
-            Built in Sherman. Built for Texas.
+            Built in Trenton. Built for Texas.
           </h2>
           <div
             className="text-base leading-relaxed flex flex-col gap-4"
             style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-dark)" }}
           >
             <p>
-              WACT Logistics LLC is a locally owned aggregate delivery company based in Sherman, Texas. We supply sand, gravel, topsoil, decomposed granite, fill dirt, and specialty stone to contractors, builders, and homeowners across Grayson County and North Texas.
+              WACT Logistics LLC is a locally owned aggregate delivery company based in Trenton, Texas. We supply sand, gravel, topsoil, decomposed granite, fill dirt, and specialty stone to contractors, builders, and homeowners across Grayson County and North Texas.
             </p>
             <p>
               We started because we saw a need for a no-nonsense materials company in this area — one that shows up on time, delivers what it says it will, and treats every customer the same whether they&apos;re ordering a single pallet or a fleet of loads.
@@ -131,7 +131,7 @@ export default function AboutPage() {
                 className="mb-4 leading-relaxed"
                 style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-dark)" }}
               >
-                We&apos;re based at 11560 TX-56 in Sherman, TX and serve Grayson County and the surrounding North Texas region. Call to confirm delivery to your specific address.
+                We&apos;re based at 11560 TX-56 in Trenton, TX and serve Grayson County and the surrounding North Texas region. Call to confirm delivery to your specific address.
               </p>
               <div className="flex items-start gap-2 mb-6">
                 <MapPin size={16} className="flex-shrink-0 mt-0.5" style={{ color: "var(--color-red)" }} />

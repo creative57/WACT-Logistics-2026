@@ -27,7 +27,7 @@ const barlowCondensed = Barlow_Condensed({
 
 export const metadata: Metadata = {
   title: {
-    default: "WACT Logistics LLC | Sand, Gravel & Aggregate Delivery — Sherman, TX",
+    default: "WACT Logistics LLC | Sand, Gravel & Aggregate Delivery — Trenton, TX",
     template: "%s | WACT Logistics LLC",
   },
   description:

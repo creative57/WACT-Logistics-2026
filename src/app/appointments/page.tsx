@@ -6,7 +6,7 @@ import { BUSINESS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Schedule a Load — Book Pickup or Delivery | WACT Logistics LLC",
   description:
-    "Book a loader time slot or schedule a delivery at WACT Logistics LLC in Sherman, TX. Available for commercial vehicles Mon–Fri 7am–5pm, Sat 7am–12pm.",
+    "Book a loader time slot or schedule a delivery at WACT Logistics LLC in Trenton, TX. Available for commercial vehicles Mon–Fri 7am–5pm, Sat 7am–12pm.",
 };
 
 export default function AppointmentsPage() {

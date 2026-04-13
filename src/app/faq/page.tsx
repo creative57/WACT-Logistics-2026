@@ -8,7 +8,7 @@ import { BUSINESS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "FAQ — Frequently Asked Questions | WACT Logistics LLC",
   description:
-    "Answers to common questions about material ordering, delivery, pricing, payment, and more. WACT Logistics LLC — Sherman, TX. Call 972-984-8858.",
+    "Answers to common questions about material ordering, delivery, pricing, payment, and more. WACT Logistics LLC — Trenton, TX. Call 972-984-8858.",
 };
 
 const extendedFAQs: FAQItem[] = [
@@ -16,7 +16,7 @@ const extendedFAQs: FAQItem[] = [
   {
     question: "How is delivery pricing calculated?",
     answer:
-      "Delivery pricing varies by your ZIP code and the distance from our yard in Sherman, TX. Submit a quote request or call 972-984-8858 and we&apos;ll give you an accurate price.",
+      "Delivery pricing varies by your ZIP code and the distance from our yard in Trenton, TX. Submit a quote request or call 972-984-8858 and we&apos;ll give you an accurate price.",
   },
   {
     question: "Can I order by the cubic yard instead of tons?",

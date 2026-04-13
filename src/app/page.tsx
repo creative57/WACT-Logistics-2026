@@ -11,7 +11,7 @@ import { PRODUCTS } from "@/lib/products";
 import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "WACT Logistics LLC | Sand, Gravel & Aggregate Delivery — Sherman, TX",
+  title: "WACT Logistics LLC | Sand, Gravel & Aggregate Delivery — Trenton, TX",
   description:
     "Sand, gravel, fill dirt, and aggregate delivery in Grayson County, TX. Free material calculator. Contractor bulk ordering and residential DIY. Call 972-984-8858.",
 };
@@ -35,12 +35,7 @@ export default function HomePage() {
         />
         <div
           className="absolute inset-0 z-0"
-          style={{ background: "rgba(10,31,107,0.75)" }}
-          aria-hidden="true"
-        />
-        <div
-          className="absolute bottom-0 left-0 right-0 h-24 z-10 pointer-events-none"
-          style={{ background: "linear-gradient(to bottom, transparent, #fff)" }}
+          style={{ background: "rgba(0,0,0,0.60)" }}
           aria-hidden="true"
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 py-24 w-full">
@@ -49,7 +44,7 @@ export default function HomePage() {
               className="text-sm font-semibold uppercase tracking-widest mb-4"
               style={{ fontFamily: "var(--font-accent)", color: "var(--color-red)" }}
             >
-              Sherman, Texas · Grayson County
+              Trenton, Texas · Grayson County
             </p>
             <h1
               className="font-bold mb-6 leading-none text-white"
@@ -202,7 +197,7 @@ export default function HomePage() {
               className="mt-2 text-base"
               style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-mid)" }}
             >
-              Bulk aggregate, specialty stone, and packaged materials. Sherman, TX and surrounding areas.
+              Bulk aggregate, specialty stone, and packaged materials. Trenton, TX and surrounding areas.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -280,7 +275,7 @@ export default function HomePage() {
       {/* 7. TRUST STATS STRIP */}
       <section className="py-12 px-4 sm:px-6" style={{ background: "var(--color-blue)" }}>
         <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8">
-          <StatCallout value="Grayson" label="County — Based in Sherman, TX" />
+          <StatCallout value="Grayson" label="County — Based in Trenton, TX" />
           <StatCallout value="On-Site" label="Loader for Commercial Vehicles" />
           <StatCallout value="Same-Day" label="Delivery Available" />
           <StatCallout value="Cash" label="Always Accepted — No Fee" />
@@ -333,7 +328,7 @@ export default function HomePage() {
             className="text-sm font-bold uppercase tracking-widest mb-2"
             style={{ fontFamily: "var(--font-accent)", color: "var(--color-red)" }}
           >
-            Sherman, Texas
+            Trenton, Texas
           </p>
           <p
             className="text-2xl sm:text-3xl font-bold text-white"
@@ -345,7 +340,7 @@ export default function HomePage() {
             className="mt-2 text-base"
             style={{ color: "rgba(255,255,255,0.7)", fontFamily: "var(--font-body)" }}
           >
-            11560 TX-56 · Sherman, TX 75090
+            11560 TX-56 · Trenton, TX 75490
           </p>
           <a href={BUSINESS.phoneHref} className="mt-6 inline-flex btn btn-primary items-center gap-2">
             <Phone size={16} />
