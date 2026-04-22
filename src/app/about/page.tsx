@@ -131,7 +131,7 @@ export default function AboutPage() {
                 className="mb-4 leading-relaxed"
                 style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-dark)" }}
               >
-                We&apos;re based at 11560 TX-56 in Trenton, TX and serve Grayson County and the surrounding North Texas region. Call to confirm delivery to your specific address.
+                We&apos;re based at 2000 S HWY 121 in Trenton, TX and serve Grayson County and the surrounding North Texas region. Call to confirm delivery to your specific address.
               </p>
               <div className="flex items-start gap-2 mb-6">
                 <MapPin size={16} className="flex-shrink-0 mt-0.5" style={{ color: "var(--color-red)" }} />
@@ -150,7 +150,7 @@ export default function AboutPage() {
             <div className="rounded-sm overflow-hidden" style={{ height: "300px", background: "var(--color-gray-light)" }}>
               <iframe
                 title="WACT Logistics LLC location"
-                src="https://maps.google.com/maps?q=11560+TX-56+Sherman+TX+75090&output=embed"
+                src="https://maps.google.com/maps?q=2000+S+HWY+121+Trenton+TX+75490&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

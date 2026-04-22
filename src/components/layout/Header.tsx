@@ -38,6 +38,7 @@ const navLinks = [
       {
         group: "Services",
         items: [
+          { label: "Skid Steer", href: "/services" },
           { label: "Delivery", href: "/services#delivery" },
           { label: "Loading for Commercial Vehicles", href: "/appointments" },
         ],
@@ -46,7 +47,7 @@ const navLinks = [
   },
   { label: "Order / Book", href: "/contractors" },
   { label: "Calculator", href: "/calculator" },
-  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -60,12 +61,12 @@ export default function Header() {
       style={{ borderBottom: "1px solid var(--color-gray-light)" }}
     >
       {/* Main nav bar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-24">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-1 flex-shrink-0">
           <span
-            className="text-2xl font-bold tracking-widest"
-            style={{ fontFamily: "var(--font-display)", color: "var(--color-red)" }}
+            className="font-bold tracking-widest"
+            style={{ fontFamily: "var(--font-display)", color: "var(--color-red)", fontSize: "27px" }}
           >
             WACT
           </span>
@@ -105,8 +106,9 @@ export default function Header() {
                 </button>
 
                 {dropdownOpen && (
+                  <div className="absolute top-full left-0 pt-2 min-w-[600px]">
                   <div
-                    className="absolute top-full left-0 bg-white shadow-xl rounded-sm border mt-1 min-w-[600px] p-4 grid grid-cols-4 gap-4"
+                    className="bg-white shadow-xl rounded-sm border p-4 grid grid-cols-4 gap-4"
                     style={{ borderColor: "var(--color-gray-light)" }}
                   >
                     {link.dropdown.map((group) => (
@@ -140,6 +142,7 @@ export default function Header() {
                         </ul>
                       </div>
                     ))}
+                  </div>
                   </div>
                 )}
               </div>
@@ -202,7 +205,7 @@ export default function Header() {
       {/* Mobile overlay menu */}
       {mobileOpen && (
         <div
-          className="lg:hidden fixed inset-0 top-16 z-40 overflow-y-auto"
+          className="lg:hidden fixed inset-0 top-24 z-40 overflow-y-auto"
           style={{ background: "var(--color-blue)" }}
         >
           <div className="p-6 flex flex-col gap-2">

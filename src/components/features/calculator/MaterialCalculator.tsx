@@ -4,12 +4,12 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import {
-  Car,
-  Flower2,
+  Route,
+  Grid3X3,
+  Sprout,
   Layers,
-  Mountain,
-  TreePine,
-  HelpCircle,
+  Footprints,
+  CircleDashed,
   Phone,
   Info,
 } from "lucide-react";
@@ -26,12 +26,12 @@ type ProjectType = "driveway" | "patio" | "garden" | "fill" | "walkway" | "other
 type TabType = "material" | "sod";
 
 const PROJECT_TYPES: { key: ProjectType; label: string; icon: React.ReactNode }[] = [
-  { key: "driveway", label: "Driveway", icon: <Car size={20} /> },
-  { key: "patio", label: "Patio", icon: <Layers size={20} /> },
-  { key: "garden", label: "Garden Bed", icon: <Flower2 size={20} /> },
-  { key: "fill", label: "Fill Area", icon: <Mountain size={20} /> },
-  { key: "walkway", label: "Walkway", icon: <TreePine size={20} /> },
-  { key: "other", label: "Other", icon: <HelpCircle size={20} /> },
+  { key: "driveway", label: "Driveway", icon: <Route size={20} /> },
+  { key: "patio", label: "Patio", icon: <Grid3X3 size={20} /> },
+  { key: "garden", label: "Garden Bed", icon: <Sprout size={20} /> },
+  { key: "fill", label: "Fill Area", icon: <Layers size={20} /> },
+  { key: "walkway", label: "Walkway", icon: <Footprints size={20} /> },
+  { key: "other", label: "Other", icon: <CircleDashed size={20} /> },
 ];
 
 interface MaterialCalculatorProps {

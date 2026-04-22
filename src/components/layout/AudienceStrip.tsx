@@ -12,9 +12,9 @@ export default function AudienceStrip() {
     <div className="flex" role="navigation" aria-label="Audience navigation">
       <Link
         href="/contractors"
-        className="flex-1 flex items-center justify-center gap-2 py-2 px-4 text-center transition-colors hover:opacity-90"
+        className="flex-1 flex items-center justify-center gap-2 py-3 px-4 text-center transition-colors hover:opacity-90"
         style={{
-          background: isContractors ? "var(--color-blue)" : "#4a5260",
+          background: "var(--color-blue)",
         }}
       >
         <span className="text-blue-200 text-sm" aria-hidden="true">&#9679;</span>
@@ -33,9 +33,9 @@ export default function AudienceStrip() {
       </Link>
       <Link
         href="/residential"
-        className="flex-1 flex items-center justify-center gap-2 py-2 px-4 text-center transition-colors hover:opacity-90"
+        className="flex-1 flex items-center justify-center gap-2 py-3 px-4 text-center transition-colors hover:opacity-90"
         style={{
-          background: isResidential ? "var(--color-red)" : "#5e5558",
+          background: "var(--color-red)",
         }}
       >
         <span className="text-red-200 text-sm" aria-hidden="true">&#9679;</span>

@@ -24,7 +24,7 @@ export default function HomePage() {
       {/* 1. HERO */}
       <section
         className="relative flex items-center justify-start"
-        style={{ minHeight: "90vh", background: "var(--color-blue)" }}
+        style={{ height: "635px", background: "var(--color-blue)" }}
       >
         <Image
           src="/location-piles.png"
@@ -38,8 +38,8 @@ export default function HomePage() {
           style={{ background: "rgba(0,0,0,0.60)" }}
           aria-hidden="true"
         />
-        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 py-24 w-full">
-          <div className="max-w-3xl">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 py-24 w-full flex justify-end" style={{ paddingRight: "62px" }}>
+          <div className="max-w-3xl text-right">
             <p
               className="text-sm font-semibold uppercase tracking-widest mb-4"
               style={{ fontFamily: "var(--font-accent)", color: "var(--color-red)" }}
@@ -60,7 +60,7 @@ export default function HomePage() {
               <span style={{ color: "var(--color-red)" }}>Delivered.</span>
             </h1>
             <p
-              className="text-xl mb-10 leading-relaxed"
+              className="text-xl mb-10 leading-relaxed ml-auto"
               style={{
                 fontFamily: "var(--font-body)",
                 color: "rgba(255,255,255,0.8)",
@@ -69,7 +69,7 @@ export default function HomePage() {
             >
               Sand, gravel, fill dirt, and aggregate delivered across Grayson County. Contractor bulk ordering. Residential DIY. Always done right.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-end">
               <Link href="/contractors" className="btn btn-primary btn-lg">
                 Order Now
               </Link>
@@ -82,6 +82,24 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* PICKUP-ONLY BANNER */}
+      <section className="py-4 px-4 text-center bg-white border-b border-gray-200">
+        <div className="max-w-2xl mx-auto">
+          <h2
+            className="text-base font-bold mb-1 uppercase tracking-wide"
+            style={{ fontFamily: "var(--font-display)", color: "var(--color-blue)" }}
+          >
+            In-Store Pickup Only for Online Orders
+          </h2>
+          <p
+            className="text-sm leading-relaxed"
+            style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-mid)" }}
+          >
+            Please note: Our online store is for in-store pickup only at checkout. If you require delivery, please contact us directly to place a delivery order, as rates vary depending on your location.
+          </p>
         </div>
       </section>
 
@@ -340,7 +358,7 @@ export default function HomePage() {
             className="mt-2 text-base"
             style={{ color: "rgba(255,255,255,0.7)", fontFamily: "var(--font-body)" }}
           >
-            11560 TX-56 · Trenton, TX 75490
+            2000 S HWY 121 · Trenton, TX 75490
           </p>
           <a href={BUSINESS.phoneHref} className="mt-6 inline-flex btn btn-primary items-center gap-2">
             <Phone size={16} />

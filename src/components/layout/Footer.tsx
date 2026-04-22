@@ -19,8 +19,7 @@ const footerLinks = {
     { label: "Get a Quote", href: "/contact" },
   ],
   Company: [
-    { label: "About WACT", href: "/about" },
-    { label: "Services", href: "/services" },
+    { label: "Skid Steer Services", href: "/services" },
     { label: "FAQ", href: "/faq" },
     { label: "Contact", href: "/contact" },
     { label: "Appointments", href: "/appointments" },

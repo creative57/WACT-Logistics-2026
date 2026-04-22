@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Lightbulb } from "lucide-react";
+import { Lightbulb, Route, Grid3X3, Sprout, Layers, Footprints } from "lucide-react";
 import MaterialCalculator from "@/components/features/calculator/MaterialCalculator";
 import ProductCard from "@/components/ui/ProductCard";
 import FAQAccordion from "@/components/ui/FAQAccordion";
@@ -16,11 +16,11 @@ export const metadata: Metadata = {
 };
 
 const projectTypes = [
-  { label: "Driveway", key: "driveway", material: "crushed_limestone", emoji: "🚗", tip: "Crushed limestone or gravel. 4 inches deep, compacted." },
-  { label: "Patio", key: "patio", material: "decomposed_granite", emoji: "🏡", tip: "Decomposed granite or mason sand. 3 inches deep." },
-  { label: "Garden Bed", key: "garden", material: "topsoil", emoji: "🌱", tip: "Topsoil or amended soil mix. 6 inches for new beds." },
-  { label: "Fill Area", key: "fill", material: "fill_dirt", emoji: "🏔️", tip: "Fill dirt for leveling and grading." },
-  { label: "Walkway", key: "walkway", material: "decomposed_granite", emoji: "🛤️", tip: "Decomposed granite or mason sand. 2–3 inches." },
+  { label: "Driveway", key: "driveway", material: "crushed_limestone", icon: <Route size={24} />, tip: "Crushed limestone or gravel. 4 inches deep, compacted." },
+  { label: "Patio", key: "patio", material: "decomposed_granite", icon: <Grid3X3 size={24} />, tip: "Decomposed granite or mason sand. 3 inches deep." },
+  { label: "Garden Bed", key: "garden", material: "topsoil", icon: <Sprout size={24} />, tip: "Topsoil or amended soil mix. 6 inches for new beds." },
+  { label: "Fill Area", key: "fill", material: "fill_dirt", icon: <Layers size={24} />, tip: "Fill dirt for leveling and grading." },
+  { label: "Walkway", key: "walkway", material: "decomposed_granite", icon: <Footprints size={24} />, tip: "Decomposed granite or mason sand. 2–3 inches." },
 ];
 
 const residentialFAQs: FAQItem[] = [
@@ -105,7 +105,7 @@ export default function ResidentialPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="section-heading text-center mb-8">What Are You Building?</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            {projectTypes.map(({ label, key, emoji, tip }) => (
+            {projectTypes.map(({ label, key, icon, tip }) => (
               <a
                 key={key}
                 href={`#calculator`}
@@ -117,7 +117,7 @@ export default function ResidentialPage() {
                   textDecoration: "none",
                 }}
               >
-                <span className="text-3xl">{emoji}</span>
+                <span style={{ color: "var(--color-blue)" }}>{icon}</span>
                 <span
                   className="text-sm font-bold uppercase"
                   style={{ fontFamily: "var(--font-accent)", color: "var(--color-blue)", letterSpacing: "0.06em" }}

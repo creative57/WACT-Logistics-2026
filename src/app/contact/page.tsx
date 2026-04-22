@@ -141,7 +141,7 @@ export default function ContactPage() {
         <div className="max-w-5xl mx-auto rounded-sm overflow-hidden" style={{ height: "350px" }}>
           <iframe
             title="WACT Logistics LLC map"
-            src="https://maps.google.com/maps?q=11560+TX-56+Sherman+TX+75090&output=embed"
+            src="https://maps.google.com/maps?q=2000+S+HWY+121+Trenton+TX+75490&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
