@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { HardHat, Home, Phone, Truck } from "lucide-react";
+import { HardHat, Home, Phone, Truck, MapPin, Clock, CreditCard } from "lucide-react";
 import MaterialCalculator from "@/components/features/calculator/MaterialCalculator";
 import QuickOrderForm from "@/components/features/order/QuickOrderForm";
 import LoaderCard from "@/components/features/order/LoaderCard";
@@ -203,6 +203,71 @@ export default function HomePage() {
       <section className="pb-16 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <QuickOrderForm />
+        </div>
+      </section>
+
+      {/* MAP + CONTACT */}
+      <section className="py-16 px-4 sm:px-6" style={{ background: "var(--color-off-white)" }}>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          {/* Map */}
+          <div className="rounded-sm overflow-hidden" style={{ border: "1px solid var(--color-gray-light)" }}>
+            <iframe
+              src="https://maps.google.com/maps?q=2000+S+HWY+121+Trenton+TX+75490&output=embed"
+              width="100%"
+              height="380"
+              style={{ border: 0, display: "block" }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="WACT Logistics location"
+            />
+          </div>
+
+          {/* Contact info */}
+          <div className="flex flex-col gap-6">
+            <div>
+              <h2 className="section-heading mb-2">Find Us</h2>
+              <p style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-mid)" }}>
+                Come see us in Trenton, TX — or call ahead.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <div className="flex gap-3 items-start">
+                <MapPin size={20} className="flex-shrink-0 mt-0.5" style={{ color: "var(--color-red)" }} />
+                <div>
+                  <p className="font-bold text-sm uppercase tracking-wide" style={{ fontFamily: "var(--font-accent)", color: "var(--color-blue)" }}>Address</p>
+                  <p style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-dark)" }}>{BUSINESS.address}</p>
+                </div>
+              </div>
+
+              <div className="flex gap-3 items-start">
+                <Phone size={20} className="flex-shrink-0 mt-0.5" style={{ color: "var(--color-red)" }} />
+                <div>
+                  <p className="font-bold text-sm uppercase tracking-wide" style={{ fontFamily: "var(--font-accent)", color: "var(--color-blue)" }}>Phone</p>
+                  <a href={BUSINESS.phoneHref} style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-dark)" }}>{BUSINESS.phone}</a>
+                </div>
+              </div>
+
+              <div className="flex gap-3 items-start">
+                <Clock size={20} className="flex-shrink-0 mt-0.5" style={{ color: "var(--color-red)" }} />
+                <div>
+                  <p className="font-bold text-sm uppercase tracking-wide" style={{ fontFamily: "var(--font-accent)", color: "var(--color-blue)" }}>Hours</p>
+                  <p style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-dark)" }}>{BUSINESS.hours.weekday}</p>
+                  <p style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-dark)" }}>{BUSINESS.hours.saturday}</p>
+                  <p style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-dark)" }}>Sunday: Closed</p>
+                </div>
+              </div>
+
+              <div className="flex gap-3 items-start">
+                <CreditCard size={20} className="flex-shrink-0 mt-0.5" style={{ color: "var(--color-red)" }} />
+                <div>
+                  <p className="font-bold text-sm uppercase tracking-wide" style={{ fontFamily: "var(--font-accent)", color: "var(--color-blue)" }}>Payment</p>
+                  <p style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-dark)" }}>All major cards accepted · 3.5% processing fee</p>
+                  <p style={{ fontFamily: "var(--font-body)", color: "var(--color-gray-dark)" }}>Cash always welcome — no fee</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
