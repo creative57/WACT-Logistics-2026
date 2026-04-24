@@ -42,6 +42,7 @@ export default function ServicesPage() {
           alt="Kubota skid steer working on a job site in Trenton, Texas"
           fill
           priority
+          sizes="100vw"
           className="object-cover object-center"
         />
         <div

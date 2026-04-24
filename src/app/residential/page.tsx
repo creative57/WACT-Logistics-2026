@@ -65,6 +65,7 @@ export default function ResidentialPage() {
           alt="Large gravel aggregate"
           fill
           priority
+          sizes="100vw"
           className="object-cover object-center"
         />
         <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.55)" }} />

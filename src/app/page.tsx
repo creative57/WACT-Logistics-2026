@@ -31,6 +31,7 @@ export default function HomePage() {
           alt="WACT Logistics material piles at location"
           fill
           priority
+          sizes="100vw"
           className="object-cover object-center"
         />
         <div
